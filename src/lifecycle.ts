@@ -128,8 +128,8 @@ export const defineLifecycle = (config: LifecycleConfig): LifecycleInstance => {
             res.writeHead(statusCode, { 'Content-Type': 'application/json' });
             res.end(body);
           })
-          .catch((error) => {
-            logger.error({ error }, 'Error getting health state');
+          .catch((err) => {
+            logger.error({ err }, 'Error getting health state');
             res.writeHead(503, { 'Content-Type': 'application/json' });
             res.end(JSON.stringify({ healthy: false, error: 'Failed to get health state' }));
           });

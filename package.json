@@ -21,7 +21,8 @@
   "author": "Diego Indart <db.indart.dev@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "pino": "^10.3.1"
+    "pino": "^10.3.1",
+    "pino-pretty": "^10.3.1"
   },
   "devDependencies": {
     "@types/node": "^25.3.0",
