@@ -386,15 +386,3 @@ onShutdown: async () => {
   // Give time for graceful termination
 },
 ```
-
-## Examples
-
-See service implementations for complete examples:
-- [Archivist Service](../../../services/archivist/src/) - Consumes from queue, stores to database
-- [Codec Service](../../../services/codec/src/) - Transforms messages between formats
-- [Feed Service](../../../services/feed/src/) - Streams WebSocket data to broker
-
-## Related Documentation
-
-- [Health Checks](./HEALTHCHECK.md) - Low-level health check API
-- [Shutdown Handlers](./SHUTDOWN.md) - Low-level signal handling API
